@@ -1,0 +1,175 @@
+/* =========================
+   THEME (dark + gangsta/tattoo)
+   ========================= */
+   :root{
+    --bg:#0b0c0e;
+    --surface:#121316;
+    --surface-2:#0f1013;
+    --ink:#eef0f3;
+    --muted:#a8acb6;
+    --line:#22242a;
+    --gold:#caa759;
+    --chrome:#6dd1ff;
+    --accent:#ff4d6a;
+    --max:1200px;
+  }
+  
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0;
+    font-family: Montserrat, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif;
+    color:var(--ink);
+    background:
+      radial-gradient(1100px 600px at 100% -10%, #1a1c21 0%, transparent 60%),
+      radial-gradient(1100px 600px at -5% -10%, #14171b 0%, transparent 60%),
+      var(--bg);
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+  }
+  img{display:block; max-width:100%}
+  a{color:inherit; text-decoration:none}
+  
+  .wrap{max-width:var(--max); margin:0 auto; padding:0 24px}
+  
+  /* =========================
+     HEADER
+     ========================= */
+  header{
+    position:sticky; top:0; z-index:50;
+    backdrop-filter: blur(8px) saturate(120%);
+    background: linear-gradient(180deg, rgba(11,12,14,.88), rgba(11,12,14,.65));
+    border-bottom:1px solid var(--line);
+  }
+  .bar{height:72px; display:flex; align-items:center; justify-content:space-between; gap:16px}
+  header h1{
+    margin:0;
+    font: 28px/1 'UnifrakturMaguntia', serif; /* vibe tattoo */
+    letter-spacing:.5px;
+  }
+  nav ul{margin:0; padding:0; list-style:none; display:flex; gap:22px}
+  nav a{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:10px 14px; border:1px solid transparent; border-radius:999px;
+    color:var(--ink);
+  }
+  nav a:hover{border-color:var(--line); background:#171920}
+  
+  /* CTA pill (if used) */
+  .cta{background:linear-gradient(180deg,var(--gold),#a6853f); color:#14110c; font-weight:800}
+  .cta:hover{filter:brightness(1.05)}
+  
+  /* =========================
+     HERO
+     ========================= */
+  .hero{
+    position:relative; display:flex; align-items:center;
+    min-height:48vh;
+    border-bottom:1px solid var(--line);
+    background:
+      radial-gradient(1000px 520px at 20% -10%, rgba(109,209,255,.10) 0%, transparent 60%),
+      radial-gradient(1000px 520px at 110% 0%, rgba(202,167,89,.12) 0%, transparent 60%),
+      url('https://images.unsplash.com/photo-1533139502658-0198f920d8ae?q=80&w=2400&auto=format&fit=crop') center/cover no-repeat;
+  }
+  .hero::after{
+    content:""; position:absolute; inset:0;
+    background: linear-gradient(180deg, rgba(11,12,14,.30), rgba(11,12,14,.78) 70%, rgba(11,12,14,.94));
+  }
+  .hero .inner{position:relative; z-index:2; padding:56px 0}
+  .hero h2{
+    margin:0 0 10px;
+    font-family:'UnifrakturMaguntia', serif;
+    font-size:clamp(30px, 6.2vw, 64px);
+    line-height:1.03;
+    text-shadow:0 2px 0 rgba(0,0,0,.45), 0 14px 28px rgba(0,0,0,.55);
+  }
+  
+  /* =========================
+     SECTIONS
+     ========================= */
+  .section{padding:56px 0}
+  h3{
+    margin:0 0 12px;
+    font: 40px/1 'UnifrakturMaguntia', serif;
+  }
+  .lead{color:var(--muted); margin:0 0 30px}
+  
+  /* =========================
+     PARTS GRID
+     ========================= */
+.parts-list{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap:22px;
+  align-items:start;
+}
+  .part-title{
+    display:none; /* esconder títulos dentro do carrossel para mostrar só as imagens lado a lado */
+  }
+.part-wrapper{
+  width:auto;
+}
+.part a{
+  display:block;
+  color:inherit;
+  text-decoration:none;
+}
+  .part{
+    display:flex;
+    flex-direction:column;
+    background: linear-gradient(145deg,#16181d,#0e1014);
+    border:1px solid var(--line);
+    border-radius:18px;
+    overflow:hidden;
+    transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,.35);
+  }
+  .part:hover{
+    transform: translateY(-4px);
+    border-color:#2a2d34;
+    box-shadow: 0 30px 60px -40px rgba(0,0,0,.9);
+  }
+  .part img{
+    display:block;
+    height:220px;
+    width:100%;
+    object-fit:cover;
+  }
+  .part h4{
+    margin:12px 16px 6px;
+    font-weight:800; font-size:16px; color:var(--ink);
+  }
+  .part p{
+    margin:0 16px 18px;
+    color:var(--muted); font-size:14.5px;
+  }
+  
+/* Responsive columns */
+/* @media (max-width:1100px){ .part-wrapper{grid-column:span 6} } */
+/* @media (max-width:720px){ .part-wrapper{grid-column:span 12} } */
+  
+  /* =========================
+     CONTACT
+     ========================= */
+  #contact a{color:var(--gold)}
+  #contact a:hover{text-decoration:underline}
+  
+  /* =========================
+     FOOTER
+     ========================= */
+  footer{
+    border-top:1px solid var(--line);
+    background: linear-gradient(180deg,#111318,#0d0f13);
+    color:var(--muted);
+    padding:28px 0;
+    text-align:center;
+  }
+  
+  /* =========================
+     UTILITIES
+     ========================= */
+  .chrome{
+    background:linear-gradient(180deg,#fff 0%, #c7e6ff 20%, #8ec9eb 40%, #0a0a0a 50%, #62e6ff 68%, #fff 80%, var(--gold) 100%);
+    -webkit-background-clip:text; background-clip:text; color:transparent;
+    text-shadow:0 6px 40px rgba(109,209,255,.10);
+  }

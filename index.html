@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vb Lowrider Shop</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="wrap bar">
+      <h1>Vb Lowrider Shop</h1>
+      <nav>
+        <ul>
+          <li><a href="#parts">Peças</a></li>
+          <li><a href="#oldCarsParts">Peças Carros Antigos</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" role="banner">
+    <div class="wrap inner">
+      <h2>Peças para o seu Lowrider ou clássico</h2>
+    <img src="https://wallpapers.com/images/hd/lowrider-impala-bouncing-diagonally-hp8wsxtc90fu38to.jpg" alt="lowrider">
+    </div>
+  </section>
+
+  <main>
+    <!-- Peças em Destaque -->
+    <section id="parts" aria-labelledby="parts-heading" class="wrap section">
+      <h3 id="parts-heading">Peças em Destaque</h3>
+      <p class="lead">Seleção rápida para montar seu projeto.</p>
+
+      <div class="parts-list">
+        <h4 class="part-title">Kit Bomba</h4>
+        <div class="part-wrapper">
+          <article class="part">
+            <a href="kit-bomba.html">
+              <img src="https://hi-low.net/cdn/shop/products/hilow.rear.kitO.G_1024x1024@2x.jpg?v=1738103407" alt="Bomba hidráulica para lowrider">
+              <h4>Kit Bomba Hidráulica</h4>
+              <p>Kit de sistema hidráulico do seu lowrider.</p>
+            </a>
+          </article>
+        </div>
+
+        <h4 class="part-title">Rodas</h4>
+        <div class="part-wrapper">
+          <article class="part">
+            <a href="rodas.html">
+              <img src="https://lawirewheels.com/images/main/desktop-hero-5.webp" alt="Rodas raiadas cromadas">
+              <h4>Rodas Raiada Lowrider — Cromadas</h4>
+              <p>Rodas Cromadas Standard / Reverse e FWD.</p>
+            </a>
+          </article>
+        </div>
+
+        <h4 class="part-title">Clássicos</h4>
+        <div class="part-wrapper">
+          <article class="part">
+            <a href="pecas-antigos.html">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJcq-SjQpj4FOt10K6x1f-irfI0BOlcJBBjA&s" alt="Peças para carros clássicos">
+              <h4>Peças para seu clássico</h4>
+              <p>Peças para toda linha GM / Ford / Lincoln e Cadillac.</p>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contact" aria-labelledby="contact-heading" class="wrap section">
+      <h3 id="contact-heading">Fale Conosco</h3>
+      <p>Quer saber mais sobre nossas peças ou eventos? Fale com a gente pelo e‑mail
+        <a href="mailto:contato@lowridersupply.com">contato@lowridersupply.com</a> ou pelo telefone (11) 99999‑9999.</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="wrap foot">
+      <small>© <span id="year"></span> Vb Lowrider Shop — Todos os direitos reservados.</small>
+    </div>
+  </footer>
+
+  <script>
+    // Ano atual no footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html> 
