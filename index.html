@@ -1,17 +1,19 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vb Lowrider Shop</title>
 
   <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=UnifrakturMaguntia&display=swap" rel="stylesheet" />
 
   <!-- CSS externo -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <!-- Header -->
@@ -32,7 +34,10 @@
   <section class="hero" role="banner">
     <div class="wrap inner">
       <h2>Peças para o seu Lowrider ou clássico</h2>
-    <img src="https://wallpapers.com/images/hd/lowrider-impala-bouncing-diagonally-hp8wsxtc90fu38to.jpg" alt="lowrider">
+      <div class="hero-banner">
+        <img src="https://images-stag.jazelc.com/uploads/theautopian-m2en/lowrider-hop-2.jpg" alt="lowrider" 
+        style="width:100%; height:300px; object-fit:cover; display:block;">
+      </div>
     </div>
   </section>
 
@@ -43,7 +48,6 @@
       <p class="lead">Seleção rápida para montar seu projeto.</p>
 
       <div class="parts-list">
-        <h4 class="part-title">Kit Bomba</h4>
         <div class="part-wrapper">
           <article class="part">
             <a href="kit-bomba.html">
@@ -54,7 +58,7 @@
           </article>
         </div>
 
-        <h4 class="part-title">Rodas</h4>
+
         <div class="part-wrapper">
           <article class="part">
             <a href="rodas.html">
@@ -65,11 +69,10 @@
           </article>
         </div>
 
-        <h4 class="part-title">Clássicos</h4>
         <div class="part-wrapper">
           <article class="part">
             <a href="pecas-antigos.html">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJcq-SjQpj4FOt10K6x1f-irfI0BOlcJBBjA&s" alt="Peças para carros clássicos">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1nbSKfFrRFdxsp3BYuGqQFyCOXqS6ZMVlmw&s" alt="Peças para carros clássicos">
               <h4>Peças para seu clássico</h4>
               <p>Peças para toda linha GM / Ford / Lincoln e Cadillac.</p>
             </a>
@@ -98,4 +101,4 @@
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
-</html> 
+</html>

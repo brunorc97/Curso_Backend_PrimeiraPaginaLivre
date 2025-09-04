@@ -64,7 +64,8 @@
      ========================= */
   .hero{
     position:relative; display:flex; align-items:center;
-    min-height:48vh;
+    min-height:30vh;
+    max-height:380px;
     border-bottom:1px solid var(--line);
     background:
       radial-gradient(1000px 520px at 20% -10%, rgba(109,209,255,.10) 0%, transparent 60%),
@@ -75,7 +76,7 @@
     content:""; position:absolute; inset:0;
     background: linear-gradient(180deg, rgba(11,12,14,.30), rgba(11,12,14,.78) 70%, rgba(11,12,14,.94));
   }
-  .hero .inner{position:relative; z-index:2; padding:56px 0}
+  .hero .inner{position:relative; z-index:2; padding:32px 0;}
   .hero h2{
     margin:0 0 10px;
     font-family:'UnifrakturMaguntia', serif;
