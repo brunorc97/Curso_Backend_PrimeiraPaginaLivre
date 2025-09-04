@@ -44,9 +44,10 @@
     background: linear-gradient(180deg, rgba(11,12,14,.88), rgba(11,12,14,.65));
     border-bottom:1px solid var(--line);
   }
-  .bar{height:72px; display:flex; align-items:center; justify-content:space-between; gap:16px}
-  .logo{display:flex; align-items:center}
+  .bar{height:72px; display:flex; align-items:center; justify-content:space-between; gap:16px; position:relative}
+  .logo{display:flex; align-items:center; position:absolute; left:50%; transform:translateX(-50%)}
   .logo img{height:44px; width:auto; display:block}
+  header nav{margin-left:auto}
   header h1{
     margin:0;
     font: 28px/1 'Honk', cursive; /* site title em Honk puro */
