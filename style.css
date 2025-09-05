@@ -51,7 +51,16 @@
   header nav.nav-right{margin-left:auto; display:flex; align-items:center; gap:14px}
   header nav.nav-left ul, header nav.nav-right ul{margin:0; padding:0; list-style:none; display:flex; gap:22px}
   .social-links{display:flex; align-items:center; gap:10px}
-  .social-links img{width:22px; height:22px; filter:drop-shadow(0 1px 2px rgba(0,0,0,.3))}
+  .social-links img{
+    width:22px; height:22px;
+    filter: grayscale(100%) brightness(1.6) drop-shadow(0 1px 2px rgba(0,0,0,.3));
+    -webkit-filter: grayscale(100%) brightness(1.6) drop-shadow(0 1px 2px rgba(0,0,0,.3));
+    transition: filter .2s ease, -webkit-filter .2s ease;
+  }
+  .social-links a:hover img{
+    filter: grayscale(100%) brightness(1.0) drop-shadow(0 1px 2px rgba(0,0,0,.3));
+    -webkit-filter: grayscale(100%) brightness(1.0) drop-shadow(0 1px 2px rgba(0,0,0,.3));
+  }
   header h1{
     margin:0;
     font: 28px/1 'Honk', cursive; /* site title em Honk puro */
